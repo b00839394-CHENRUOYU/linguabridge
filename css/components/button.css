@@ -1,0 +1,15 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 18px;
+  padding: 9px 17px;
+  border-radius: 7px;
+  background: var(--peach);
+  color: #30221d;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.button:hover { background: #ffc2af; }
+.banner a:focus-visible { outline-color: #ffc2af; }

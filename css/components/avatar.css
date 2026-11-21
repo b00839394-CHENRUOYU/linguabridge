@@ -1,0 +1,39 @@
+.avatar {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  flex: 0 0 34px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #d3eee3;
+  color: var(--teal);
+}
+
+.bridge {
+  position: relative;
+  width: 22px;
+  height: 12px;
+  border-top: 2px solid currentColor;
+}
+
+.bridge::before {
+  position: absolute;
+  top: -6px;
+  left: 2px;
+  right: 2px;
+  height: 12px;
+  border-inline: 2px solid currentColor;
+  content: "";
+}
+
+.bridge::after {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 12px;
+  height: 8px;
+  border: 2px solid currentColor;
+  border-bottom: 0;
+  border-radius: 12px 12px 0 0;
+  content: "";
+}

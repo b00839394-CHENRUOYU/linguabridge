@@ -1,0 +1,29 @@
+.banner {
+  background: linear-gradient(130deg, #103b45, #15585a);
+  color: white;
+}
+
+.top-nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 20px; }
+.brand { display: inline-flex; align-items: center; gap: 9px; font-weight: 750; text-decoration: none; }
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(22px, 5vw, 70px);
+  padding-block: clamp(32px, 7vw, 92px);
+}
+.eyebrow { color: #d3eee3; font-weight: 650; }
+.hero h1 {
+  margin-top: 14px;
+  font-size: clamp(2.125rem, 5vw, 4.25rem);
+  line-height: 1.15;
+  letter-spacing: -.015em;
+  text-wrap: balance;
+}
+.lede { max-width: 46ch; color: #eef9f5; }
+.hero-preview img { width: 100%; border-radius: 12px; }
+.hero-preview figcaption { margin-top: 8px; color: #e6f4ef; font-size: .875rem; }
+
+@media (max-width: 720px) {
+  .hero { grid-template-columns: 1fr; }
+}
